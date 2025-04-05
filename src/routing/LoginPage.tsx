@@ -1,5 +1,7 @@
+import LoginStatus from "../state-management/LoginStatus";
+
 const LoginPage = () => {
-  return <div>Login</div>;
+  return <LoginStatus />;
 };
 
 export default LoginPage;

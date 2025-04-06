@@ -10,9 +10,9 @@ interface ADD {
   type: "ADD";
   payload: Task;
 }
-type ACTION = DELETE | ADD;
+export type TaskAction = DELETE | ADD;
 
-export default (state: Task[], action: ACTION): Task[] => {
+export default (state: Task[], action: TaskAction): Task[] => {
   switch (action.type) {
     case "ADD":
       return [...state, action.payload];

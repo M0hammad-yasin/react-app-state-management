@@ -6,8 +6,8 @@ interface Login {
 interface Logout {
   type: "LOGOUT";
 }
-type Auth = Login | Logout;
-export default (state: string, action: Auth): string => {
+export type AuthAction = Login | Logout;
+export default (state: string, action: AuthAction): string => {
   switch (action.type) {
     case "LOGIN":
       return (state = action.username); //return the username if login successful

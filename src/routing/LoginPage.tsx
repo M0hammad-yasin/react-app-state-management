@@ -1,4 +1,4 @@
-import LoginStatus from "../state-management/LoginStatus";
+import LoginStatus from "../state-management/auth/LoginStatus";
 
 const LoginPage = () => {
   return <LoginStatus />;
